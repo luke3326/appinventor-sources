@@ -1888,7 +1888,7 @@ path.ode-SimpleMockMapFeature-selected {
   border-left: 4px solid #8fc202;
   border-right: 4px solid #8fc202;
   border-bottom: 4px solid #8fc202;
-  z-index: 1000;
+  z-index: 500;
   min-height: 40px;
 }
 
