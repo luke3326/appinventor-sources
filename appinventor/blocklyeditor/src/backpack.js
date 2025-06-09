@@ -459,6 +459,11 @@ AI.Blockly.Backpack = class extends Blockly.DragTarget {
     block.setCollapsed(false);
     const xmlBlock = Blockly.Xml.blockToDom(block);
     Blockly.Xml.deleteNext(xmlBlock);
+
+    if (isCollapsed) {
+      xmlBlock.setAttribute('collapsed', 'true');
+    }
+
     // Encode start position in XML.
     const xy = block.getRelativeToSurfaceXY();
     xmlBlock.setAttribute('x', this.workspace_.RTL ? -xy.x : xy.x);
