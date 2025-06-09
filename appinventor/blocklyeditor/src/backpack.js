@@ -460,6 +460,7 @@ AI.Blockly.Backpack = class extends Blockly.DragTarget {
     const xmlBlock = Blockly.Xml.blockToDom(block);
     Blockly.Xml.deleteNext(xmlBlock);
 
+    // If block is collapsed, keep it that way
     if (isCollapsed) {
       xmlBlock.setAttribute('collapsed', 'true');
     }
