@@ -1222,7 +1222,7 @@ they get cut off in Windows.
     border-left: unset;
     border-right: unset;
     border-bottom: unset;
-    z-index: 500;
+    z-index: 1000;
     background-color: background-color;
     box-shadow: 4px 4px 20px 7px container-shadow;
     overflow: hidden !important;
